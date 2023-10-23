@@ -1,0 +1,97 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1190px;
+    }
+  }
+@media (max-width: 768px) {
+    /* page home */
+    .filtering .div--card--box h3{
+        font-size: 32px;
+    }
+    .giangvien--text h3 {
+        font-size: 32px;
+    }
+    .mySwiper--text h4 {
+        font-size: 32px;
+    }
+    .section--media--title{
+        margin-top: 40px;
+    }
+    .section--media--title h4{
+       font-size: 32px;
+    }
+    .section--partner h4{
+        font-size: 32px;
+    }
+    .section--learn--text__box h5{
+        font-size: 32px;
+    }
+    .section--partner--box__img{
+        width: 70%;
+    }
+    .section--active h4{
+        font-size: 32px;
+    }
+    .section--store h4 {
+        font-size: 32px;
+        padding-top: 30px;
+  }
+  .section--store{
+    padding-bottom: 30px;
+  }
+  .banner--position--img{
+    width: 19%;
+    height: 20%;
+  }
+ 
+
+}
+@media (max-width: 540px) {
+/* page home */
+.section--about .section--about--video iframe{
+    width: 492px !important;
+}
+.filtering .div--card--box h3{
+    font-size: 28px;
+}
+.giangvien--text h3 {
+    font-size: 28px;
+}
+.mySwiper--text h4 {
+    font-size: 28px;
+}
+
+.section--media--title h4{
+    font-size: 28px;
+}
+.section--partner h4{
+    font-size: 28px;
+}
+.section--learn--text__box h5{
+    font-size: 28px;
+}
+.section--partner--box__img{
+    width: 50%;
+}
+.section--active h4{
+    font-size: 28px;
+}
+.section--store h4 {
+    font-size: 28px;
+    
+}
+/* .section--store--right__border__img{
+    width: 40%;
+} */
+.section--media--title{
+    text-align: start !important;
+}
+.section--media--title p{
+ margin: 0;
+ width: 100%;
+}
+.section--media .section--about--text__all--link{
+    margin: 0 0 30px 0 !important;
+}
+
+  }

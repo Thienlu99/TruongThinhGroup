@@ -1,0 +1,191 @@
+:root {
+    --primary: #39B54A;
+    --second: #FFF;
+    --text: #424242;
+    --orange: #F7931E;
+  }
+  html,
+  body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    /* width: 1440px; */
+    /* height: 2354px; */
+  }
+  img {
+    max-width: 100%; /* Hình ảnh sẽ không vượt quá chiều rộng của phần tử chứa */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  /* slider 1 */
+  .filtering{
+    padding-bottom: 90px;
+  }
+  .filtering .slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translate(50%,0); */
+    align-items: center;
+    display: flex !important;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  .filtering .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: var(--second);
+    opacity: 0.3;
+    border: none;
+    outline: none;
+}
+.slick-dots{
+  list-style: none;
+}
+.filtering4 button i{
+  font-size: 32px;
+}
+.filtering4 .slick-arrow{
+  display: flex;
+  width: 52px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--second);
+  color: var(--primary);
+  border: 1.337px solid #04A927;
+  border-radius: 8px;
+  z-index: 2;
+}
+.filtering4 .slick-arrow:hover{
+  background-color: #f3f3f3;
+}
+.filtering4 .slick-prev{
+  position: absolute;
+  left: -50px;
+}
+.filtering4 .slick-next{
+  position: absolute;
+  right: -50px;
+}
+.filtering li.slick-active button{
+background-color: var(--second);
+border: var(--second);
+outline: var(--second);
+opacity: 1;
+}
+/* swiper */
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  width: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 30px;
+  /* white-space: nowrap;
+  overflow: hidden; */
+}
+
+/* ----------responesive menu */
+input.nav__input {
+  display: none;
+}
+
+.nav__bar-btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.nav__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+.nav__mobile {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in-out;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.nav__mobile .nav__mobile-list > li{
+  border-top: 1px solid #c0c0c0;
+  position: relative;
+}
+.nav__mobile .nav__mobile-list > li  i{
+  position: absolute;
+  top: 17px;
+  position: absolute;
+  right: 13px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav__mobile .nav__mobile-list > li  i:hover{
+  color: red;
+}
+.nav__mobile .nav__mobile-list li a{
+  color: var(--text);
+
+}
+.nav__mobile-list{
+  margin-top: 50px;
+}
+
+.nav__mobile-link {
+  display: block;
+  padding: 1rem;
+}
+.nav__mobile-btn {
+  position: absolute;
+  top: -4px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav__input:checked ~ .nav__mobile {
+  transform: translateX(0);
+}
+.nav__input:checked ~ .nav__overlay {
+  display: block;
+}
+/* sub menu mobile */
+.megamenu--mobile{
+  display: none;
+}
+.megamenu--mobile ul li{
+  padding: 10px 20px;
+  border-top: 1px solid #c0c0c0;
+}
+/* end submenu mobile */
+@media (max-width: 993px) {
+
+  .nav__bar-btn {
+    display: block;
+    z-index: 1;
+  }
+  .nav__pc {
+    display: none;
+  }
+}
+
+/* ------------end ------------- */
