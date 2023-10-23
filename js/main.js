@@ -17,11 +17,12 @@ $(document).ready(function () {
     loop: true, // Slider sẽ lặp lại
     autoplay: {
       delay: 0, // Thời gian chờ trước khi tự động chuyển slide
-      disableOnInteraction: false //Không tắt tự động chuyển slide khi người dùng tương tác với slider.
+      disableOnInteraction: true //Không tắt tự động chuyển slide khi người dùng tương tác với slider.
     },
-    freeMode: true, //cho phép người dùng kéo slider mà không bắt buộc phải theo từng slide cố định.
+    freeMode: false, //cho phép người dùng kéo slider mà không bắt buộc phải theo từng slide cố định.
     spaceBetween: 0, //Khoảng cách giữa các slide trong pixel.
-    centeredSlides: true // Slider sẽ căn giữa slide hiện tại trong tâm của viewport.
+    centeredSlides: true, // Slider sẽ căn giữa slide hiện tại trong tâm của viewport.
+ 
   });
   const swiperReverse = new Swiper(".mySwiperReverse", {
     allowTouchMove: true,
@@ -32,17 +33,17 @@ $(document).ready(function () {
       delay: 0,
       disableOnInteraction: true,
       reverseDirection: true, //ngược lại
-      pauseOnMouseEnter: true, //slider sẽ tạm dừng tự động chuyển slide khi con trỏ chuột (mouse) di vào khu vực của slider
+      pauseOnMouseEnter: false, //slider sẽ tạm dừng tự động chuyển slide khi con trỏ chuột (mouse) di vào khu vực của slider
     },
     spaceBetween: 0,
     centeredSlides: true,
   });
 
-  // $(".mySwiper").mouseover(function () {
+  //  $(".mySwiper").mouseover(function () {
 
-  //     console.log("hi");
-  //     swiper.autoplay.pause();
-  // });
+  //      console.log("hi");
+  //      swiper.autoplay.pause();
+  //  });
 
   // Xử lý tương tác khác
   //   swiper.on("mouseover", function() {

@@ -49,7 +49,7 @@
 @media (max-width: 540px) {
 /* page home */
 .section--about .section--about--video iframe{
-    width: 492px !important;
+    width: 99% !important;
 }
 .filtering .div--card--box h3{
     font-size: 28px;
