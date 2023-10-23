@@ -330,7 +330,7 @@
   font-weight: 600;
 }
 .section--learn {
-  background-image: url(/img/Frame.png);
+  background-image: url("../img/Frame.png");
   min-height: 270px;
   object-fit: cover;
   background-color: #f7931e;
@@ -345,7 +345,7 @@
 }
 
 .section--table--learn {
-  background-image: url(/img/image\ 225.png);
+  background-image: url("../img/image\ 225.png");
   min-height: 650px;
   object-fit: cover;
   background-color: #f7931e;
@@ -359,7 +359,12 @@
   border-radius: 8px;
   border: 1px solid #f2f0f0;
 }
-
+/* .search-form form {
+  display: none;
+}
+.header--search--icon:hover  .search-form form {
+  display: block;
+} */
 .bg--table--learn {
   border-radius: 16px;
   border: 1px solid #fff;
