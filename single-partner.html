@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đối tác chi tiết</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" /> -->
+    <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header--socal">
+            <div class="container">
+                <div class="header--socal--all">
+                    <div class="header--socal__km">
+                        <i class="fa-solid fa-tag"></i>
+                        <p>Khuyến mãi tháng 9: Giảm 50% học phí!</p>
+                    </div>
+                    <div class="header--socal__socal">
+                        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                        <a href=""> <i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                        <a href=""> <i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header--socal -->
+        <section class="menu--header--section">
+            <div class="container">
+                <div class="menu--header--all">
+                    <div class="menu--header__img">
+                        <a href="/">
+                            <picture>
+                                <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
+                                <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
+                                <source media="(max-width:1024px)" srcset="img/Asset 1 1.png">
+                                <img src="img/Asset 1 1.png" style="width:auto;">
+                            </picture>
+                        </a>
+
+                    </div>
+                    <input type="checkbox" class='nav__input' name="" id="nav__input">
+                    <!-- icon bar -->
+                    <label for="nav__input" class="nav__bar-btn">
+                        <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                    </label>
+                    <nav class="menu--header__menu nav__pc">
+                        <ul>
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Khoá học & Chương trình</a><i class="fa-solid fa-angle-down"></i></li>
+                            <li><a href="">Đối tác</a></li>
+                            <li><a href="">Thư viện</a><i class="fa-solid fa-angle-down"></i></li>
+                            <li><a href="">Tin tức & Tuyển dụng</a><i class="fa-solid fa-angle-down"></i></li>
+                        </ul>
+                    </nav>
+                    <div class="header--search--contact nav__pc">
+                        <div class="header--search--icon" style="position: relative;;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- <div class="search-form" style="position: absolute;z-index: 2;">  
+                                <form>
+                                    <div class="input-group">
+                                        <div class="form-outline">
+                                          <input type="search" id="form1" class="form-control" />
+                                          <label class="form-label" for="form1">Search</label>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fas fa-search"></i>
+                                        </button>
+                                      </div>
+                                </form>
+                            </div> -->
+                        </div>
+                        <div class="header--contact">
+                            <a href="">Liên hệ</a>
+                        </div>
+                    </div>
+
+                    <!-- background đen -->
+                    <label for="nav__input" class="nav__overlay">
+                    </label>
+                    <!-- menu mobile -->
+                    <nav class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-link">
+                                <form action="">
+                                    <input type="search" class="form-control" placeholder="tìm kiếm"
+                                        style="height: 34px;width: 180px;">
+                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Liên Hệ</a> </li>
+                            <li><a href="#" class="nav__mobile-link">Về chúng tôi</a><i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="megamenu--mobile">
+                                    <ul class="single-mega cn-col-4">
+                                        <li class="title">Doanh nghiệp 1</li>
+                                        <li><a href="#">Doanh nghiệp con 1.1</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.2</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.3</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.4</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.5</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.6</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.7</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Khoá học & Chương trình </a><i
+                                    class="fa-solid fa-angle-down"></i>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Thư viện</a><i class="fa-solid fa-angle-down"></i>
+
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Tin tức & Tuyển dụng</a><i
+                                    class="fa-solid fa-angle-down"></i></li>
+                        </ul>
+                        <!-- icon X -->
+                        <label for="nav__input" class="nav__mobile-btn">
+                            <i class="fa-solid fa-x" style="font-size: 25px;"></i>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- end menu--header -->
+        <section class="all--bg--content">
+            <section class="section--breadcrumb">
+                <div class="container">
+                    <div class="fui-basic-breadcrumb">
+                        <ul class="breadcrumb-list">
+                            <li class="breadcrumb-item">
+                                <a href="/index.html" class="breadcrumb-link">
+
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+
+                                <a href="partner.html" class="breadcrumb-link">Đối tác</a>
+                            </li>
+                            <li class="breadcrumb-item">
+
+                                <a href="#" class="breadcrumb-link">Sun Asterisk</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12 col-12">
+                        <div class="content--single--new--left">
+                            <div class="single--partner--title">
+                                <div class="single--partner--title--left">
+                                    <h3>Sun Asterisk</h3>
+                                    <p>sun-asterisk.vn</p>
+                                </div>
+                            </div>
+
+                            <div class="hr--content--single--new--left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="730" height="2" viewBox="0 0 730 2"
+                                    fill="none">
+                                    <path d="M0 1H730" stroke="#E2E2E2" />
+                                </svg>
+                            </div>
+
+                            <p style="font-size: 16px;font-weight: 500;">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                            <div class="content--bg--single__p">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <h4 style="color: #001A38;font-size: 22px;font-weight: 700;padding-bottom: 20px;">
+                                The standard Lorem Ipsum passage, used since the 1500s
+                            </h4>
+
+                            <div class="p--content--single--partner">
+                                <p class="content--size15">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id
+                                    est laborum.</p>
+                                <p class="content--size15">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id
+                                    est laborum.</p>
+                                <p class="content--size15">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                    id
+                                    est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <div class="post--viewhight">
+                            <h4>Đối tác</h4>
+                            <div class="row" style="gap: 23px 0;">
+                                <div class="col-md-4 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__img  post--partner__img">
+                                        <img src="img/image 191.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__title">
+                                        <h5>Rikkeisoft - Trusted IT Outsourcing Provider</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__img post--partner__img">
+                                        <img src="img/image 192.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__title ">
+                                        <h5>Công ty cổ phần đầu tư và công nghệ BAP</h5>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__img post--partner__img">
+                                        <img src="img/image 194.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-6 col-12 view--pd">
+                                    <div class="post--viewhight__title">
+                                        <h5>Neo Lab Việt Nam</h5>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- end post viewhight -->
+
+
+                        <div class="nav--right--img">
+                            <img src="img/image 238.png" alt="">
+                        </div>
+                        <div class="nav--right--img">
+                            <img src="img/image 239.png" alt="">
+                        </div>
+                        <!-- end img -->
+                    </div>
+
+                </div>
+            </div>
+            <!-- end breadcrumb -->
+        </section>
+
+        <section class="section--store">
+            <div class="container">
+                <h4>Hệ thống cửa hàng</h4>
+                <div class="row section--store--row" style="margin-right: 0px; margin-left: 0px;">
+                    <div class="col-md-6 col-sm-12" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="tab-content">
+                            <div id="map1" class="tab-pane active">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map2" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map3" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map4" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map5" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map6" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map7" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="section--store--right">
+                            <div class="section--store--right__border">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="active active-tab" data-toggle="tab" href="#map1">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 1</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map2">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 2</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 362 Đường 3/2, P12, Quận 10</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map3">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 3</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 264F Bạch Đằng, P24, Bình Thạnh</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map4">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 4</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 383 Nguyễn Trọng Tuyển, Phường 2, Tân Bình</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map5">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 5</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map6">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 6</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map7">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 7</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section store -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer--logo">
+                    <a href="/"><img src="img/Asset 111.png" alt="" style="width: 260px;height: 58px;"></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-6 col-12" style="padding-right: 20px;">
+                        <div class="footer--adress">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>&nbsp; Địa chỉ: 1264/47/17 Lê Đức Thọ, Phường 13, Quận Gò Vấp, Tp.HCM.</p>
+                        </div>
+                        <div class="footer--phone">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <p>&nbsp; Hotline : 18006025</p>
+                        </div>
+                        <div class="footer--mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: contact@truongthinh.info">&nbsp; Email: contact@truongthinh.info</a>
+                        </div>
+                        <div class="footer--conect">
+                            <p>Kết nối: </p>
+                            <div class="footer--conect--socal">
+                                <a href=""> <i class="fa-brands fa-facebook-f" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-instagram" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-tiktok" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-youtube" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-telegram" style="font-size: 20px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-12">
+                        <div class="row" style="gap: 30px 0;">
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--learn">
+                                    <h6>Khoá học</h6>
+                                    <ul>
+                                        <li><a href="">Khoá học Figma</a></li>
+                                        <li><a href="">Khoá học sửa chữa</a></li>
+                                        <li><a href="">Khoá học phần mềm</a></li>
+                                        <li><a href="">Khoá học lập trình</a></li>
+                                        <li><a href="">Khoá học hệ thống nhúng</a></li>
+                                        <li><a href="">Khoá học quản lý</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--lienket">
+                                    <h6>Liên kết</h6>
+                                    <ul>
+                                        <li><a href="">Giới thiệu</a></li>
+                                        <li><a href="">Đối tác</a></li>
+                                        <li><a href="">Thư viện hình ảnh</a></li>
+                                        <li><a href="">Thư viện video</a></li>
+                                        <li><a href="">Tin tức & Tuyển dyhng</a></li>
+                                        <li><a href="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--other">
+                                    <h6>Khác</h6>
+                                    <ul>
+                                        <li><a href="">Điều khoản sử dụng</a></li>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Site map</a></li>
+                                        <li><a href="">Thư viện video</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="opacity: 0.15; background: #FFF;">
+                <div class="footer--copy text-center">
+                    <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script> Trường Thịnh Group. All Rights
+                        Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- link xuống dưới jquery min -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--  JS fontawesome -->
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+
+</body>
+
+</html>

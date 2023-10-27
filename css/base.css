@@ -6,10 +6,11 @@
   }
   html,
   body {
-    font-family: "Inter", sans-serif;
+    font-family: 'SVN-Gilroy', sans-serif;
     font-size: 16px;
     /* width: 1440px; */
     /* height: 2354px; */
+    color: var(--text);
   }
   img {
     max-width: 100%; /* Hình ảnh sẽ không vượt quá chiều rộng của phần tử chứa */
@@ -67,17 +68,18 @@
 }
 .filtering4 .slick-prev{
   position: absolute;
-  left: -50px;
+  left: -55px;
 }
 .filtering4 .slick-next{
   position: absolute;
-  right: -50px;
+  right: -55px;
 }
 .filtering li.slick-active button{
 background-color: var(--second);
 border: var(--second);
 outline: var(--second);
 opacity: 1;
+box-shadow: 0 0 0 4px rgb(211 206 206);
 }
 /* swiper */
 .swiper-wrapper {
@@ -113,7 +115,7 @@ input.nav__input {
   display: none;
 }
 .nav__mobile {
-  z-index: 1;
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,7 +129,7 @@ input.nav__input {
 }
 
 .nav__mobile .nav__mobile-list > li{
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid  #f4ebeb;
   position: relative;
 }
 .nav__mobile .nav__mobile-list > li  i{
@@ -174,7 +176,7 @@ input.nav__input {
 }
 .megamenu--mobile ul li{
   padding: 10px 20px;
-  border-top: 1px solid #c0c0c0;
+  border-top: 1px solid rgb(244, 235, 235);
 }
 /* end submenu mobile */
 @media (max-width: 993px) {

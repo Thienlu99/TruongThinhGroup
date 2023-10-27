@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Facebook Comment Section</title>
+    <style>
+        .description{
+            margin-bottom: 0;
+        }
+        .fui-accordion {
+            width: 100%;
+            background: #fff;
+            margin: 0 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .fui-accordion .accordion-content {
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #d1d5db;
+            overflow: hidden;
+        }
+
+        .fui-accordion .accordion-content.open {
+            padding-bottom: 10px;
+        }
+
+        .fui-accordion .accordion-content header {
+            display: flex;
+            min-height: 50px;
+            padding: 0 15px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s linear;
+        }
+
+        .fui-accordion .accordion-content.open header {
+            min-height: 35px;
+        }
+
+        .fui-accordion .accordion-content header .title {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .fui-accordion .icon-plus.hidden {
+            display: none;
+        }
+
+        .fui-accordion .icon-minus {
+            display: none;
+        }
+
+        .fui-accordion .icon-minus.active {
+            display: block;
+        }
+
+        .fui-accordion .accordion-content .description {
+            height: 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            font-weight: 400;
+            padding: 0 15px;
+            transition: all 0.3s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fui-accordion">
+        <div class="accordion-content">
+            <header>
+                <span class="title">Accordion item #1</span>
+                <span class="icon icon-plus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="icon icon-minus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+            </header>
+
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis
+                ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur
+                fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim
+                numquam voluptatem?
+            </p>
+        </div>
+
+        <div class="accordion-content">
+            <header>
+                <span class="title">Accordion item #2</span>
+                <span class="icon icon-plus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="icon icon-minus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+            </header>
+
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis
+                ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur
+                fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim
+                numquam voluptatem?
+            </p>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <span class="title">Accordion item #3</span>
+                <span class="icon icon-plus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="icon icon-minus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+            </header>
+
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis
+                ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur
+                fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim
+                numquam voluptatem? Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Iusto neque, sed inventore illum ut quis ducimus
+                deleniti temporibus maiores? At nisi sed pariatur cupiditate quidem
+                quod adipisci aut, eos quis minima voluptates non veniam ipsam quasi
+                architecto ducimus error eum id ab, suscipit doloribus, ut accusantium
+                consequuntur voluptate! Unde, hic sed rerum officia totam id libero
+                officiis nihil rem sequi porro labore praesentium repudiandae a
+                blanditiis molestias nisi beatae natus! Ea, ut voluptates, natus harum
+                nesciunt odio hic eveniet reprehenderit veritatis, possimus tempora
+                magni soluta eaque quidem neque maxime nostrum sapiente commodi? Earum
+                ex cumque cupiditate dicta, tempora temporibus quaerat.
+            </p>
+        </div>
+        <div class="accordion-content">
+            <header>
+                <span class="title">Accordion item #4</span>
+                <span class="icon icon-plus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 7C13 6.44772 12.5523 6 12 6C11.4477 6 11 6.44772 11 7V11H7C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11V17C11 17.5523 11.4477 18 12 18C12.5523 18 13 17.5523 13 17V13H17C17.5523 13 18 12.5523 18 12C18 11.4477 17.5523 11 17 11H13V7Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+                <span class="icon icon-minus">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+                            fill="currentColor" />
+                    </svg>
+                </span>
+            </header>
+
+            <p class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus nobis
+                ut perspiciatis minima quidem nisi, obcaecati, delectus consequatur
+                fuga nostrum iusto ipsam ducimus quibusdam possimus. Maiores non enim
+                numquam voluptatem?
+            </p>
+        </div>
+    </div>
+    <script>
+        const accordionContent = document.querySelectorAll(
+            ".fui-accordion .accordion-content"
+        );
+        accordionContent.forEach((item, index) => {
+            const iconPlus = item.querySelector(".fui-accordion .icon-plus");
+            const iconMinus = item.querySelector(".fui-accordion .icon-minus");
+            let header = item.querySelector("header");
+            item.classList.remove("open");
+            header.addEventListener("click", () => {
+                item.classList.toggle("open");
+
+                let description = item.querySelector(".description");
+                if (item.classList.contains("open")) {
+                    description.style.height = `${description.scrollHeight}px`;
+                    iconPlus.classList.add("hidden");
+                    iconMinus.classList.add("active");
+                } else {
+                    description.style.height = "0px";
+                    iconPlus.classList.remove("hidden");
+                    iconMinus.classList.remove("active");
+                }
+                removeOpen(index);
+            });
+        });
+
+        function removeOpen(index1) {
+            accordionContent.forEach((item2, index2) => {
+                const iconPlus = item2.querySelector(".fui-accordion .icon-plus");
+                const iconMinus = item2.querySelector(".fui-accordion .icon-minus");
+                if (index1 != index2) {
+                    item2.classList.remove("open");
+
+                    let des = item2.querySelector(".description");
+                    des.style.height = "0px";
+                    iconPlus.classList.remove("hidden");
+                    iconMinus.classList.remove("active");
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

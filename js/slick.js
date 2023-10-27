@@ -64,4 +64,11 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".gallery").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false, //làm mất nút next prev
+    dots: false
+  });
 });

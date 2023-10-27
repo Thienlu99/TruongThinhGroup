@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 42px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      margin-top: 15px;
+      width: 70%;
+    }
+
+
+    .image-magnific {
+      width: 70%;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      margin-top: 3px;
+      width: 70%;
+
+      .gallery-magnific {
+        width: 35%;
+        height: 15vw;
+        padding-bottom: 4.5vw;
+      }
+
+      .gallery-magnific:not(:last-child) {
+        margin-right: 5px;
+      }
+
+      .title,
+      .author {
+        font-weight: 700;
+        color: #000;
+      }
+
+      .title {
+        font-size: 1.1vw;
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+
+      .author {
+        font-weight: 400;
+        font-size: 1vw;
+      }
+    }
+
+    .video-youtube {
+      width: 70%;
+      margin-top: 5px;
+    }
+
+
+
+    .mfp-zoom-out-cur,
+    .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+      cursor: default;
+    }
+
+    .mfp-close {
+      cursor: pointer !important;
+      width: 20px !important;
+      height: 20px !important;
+      line-height: 16px !important;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>One Image</h3>
+  <a class="image-magnific" title="Golden Gate Bridge, San Francisco, United States"
+    href="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+    <img
+      src="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="img">
+  </a>
+
+  <h3>Gallery</h3>
+  <div class="slider">
+    <div class="gallery">
+      <a class="gallery-magnific"
+      href="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      data-mfp-src="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <img
+        src="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto.format&fit=crop&w=1170&q=80"
+        alt="gallery__img1">
+      <h5 class="title">Pfeiffer Beach, United States</h5>
+      <div class="author">Willian Justen de Vasconcellos</div>
+    </a>
+    <a class="gallery-magnific" href="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+      <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="gallery__img2">
+      <h5 class="title">Grindelwald, Suíça</h5>
+      <div class="author">Kace Rodriguez</div>
+    </a>
+    <a class="gallery-magnific" href="https://images.unsplash.com/photo-1645814111458-636f22786ca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
+      <img src="https://images.unsplash.com/photo-1645814111458-636f22786ca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="gallery__img3">
+      <h5 class="title">India</h5>
+      <div class="author">Janmesh Shah</div>
+    </a>
+    </div>
+  </div>
+
+
+
+  <h3>Youtube Video</h3>
+  <a class="video-youtube" href="https://www.youtube.com/watch?v=6WJ13zrscxs">
+    <img
+      src="https://images.unsplash.com/photo-1475656106224-d72c2ab53e8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      alt="video__img">
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- link xuống dưới jquery min -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!--  JS fontawesome -->
+  <script src="js/all.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/slick.js"></script>
+  <script>
+    // One Image
+    $(".image-magnific").magnificPopup({
+      type: "image"
+    });
+
+    // Gallery
+    $(".gallery-magnific").magnificPopup({
+      type: "image",
+      gallery: {
+        enabled: true
+      },
+      image: {
+        titleSrc: function (item) {
+          return (
+            item.el.find(".title").html() +
+            `<small>${item.el.find(".author").html()}</small>`
+          );
+        }
+      }
+    });
+
+    // Youtube Video
+    $(".video-youtube").magnificPopup({
+      type: "iframe",
+      removalDelay: 160,
+      preloader: false
+    });
+
+  </script>
+</body>
+
+</html>

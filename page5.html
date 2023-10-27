@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Về chúng tôi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header--socal">
+            <div class="container">
+                <div class="header--socal--all">
+                    <div class="header--socal__km">
+                        <i class="fa-solid fa-tag"></i>
+                        <p>Khuyến mãi tháng 9: Giảm 50% học phí!</p>
+                    </div>
+                    <div class="header--socal__socal">
+                        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                        <a href=""> <i class="fa-brands fa-tiktok"></i></a>
+                        <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                        <a href=""> <i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header--socal -->
+        <section class="menu--header--section">
+            <div class="container">
+                <div class="menu--header--all">
+                    <div class="menu--header__img">
+                        <a href="/">
+                            <picture>
+                                <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
+                                <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
+                                <source media="(max-width:1024px)" srcset="img/Asset 1 1.png">
+                                <img src="img/Asset 1 1.png" style="width:auto;">
+                            </picture>
+                        </a>
+
+                    </div>
+                    <input type="checkbox" class='nav__input' name="" id="nav__input">
+                    <!-- icon bar -->
+                    <label for="nav__input" class="nav__bar-btn">
+                        <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                    </label>
+                    <nav class="menu--header__menu nav__pc">
+                        <ul>
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Khoá học & Chương trình</a><i class="fa-solid fa-angle-down"></i></li>
+                            <li><a href="">Đối tác</a></li>
+                            <li><a href="">Thư viện</a><i class="fa-solid fa-angle-down"></i></li>
+                            <li><a href="">Tin tức & Tuyển dụng</a><i class="fa-solid fa-angle-down"></i></li>
+                        </ul>
+                    </nav>
+                    <div class="header--search--contact nav__pc">
+                        <div class="header--search--icon" style="position: relative;;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <!-- <div class="search-form" style="position: absolute;z-index: 2;">  
+                                <form>
+                                    <div class="input-group">
+                                        <div class="form-outline">
+                                          <input type="search" id="form1" class="form-control" />
+                                          <label class="form-label" for="form1">Search</label>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                          <i class="fas fa-search"></i>
+                                        </button>
+                                      </div>
+                                </form>
+                            </div> -->
+                        </div>
+                        <div class="header--contact">
+                            <a href="">Liên hệ</a>
+                        </div>
+                    </div>
+
+                    <!-- background đen -->
+                    <label for="nav__input" class="nav__overlay">
+                    </label>
+                    <!-- menu mobile -->
+                    <nav class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-link">
+                                <form action="">
+                                    <input type="search" class="form-control" placeholder="tìm kiếm"
+                                        style="height: 34px;width: 180px;">
+                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Liên Hệ</a> </li>
+                            <li><a href="#" class="nav__mobile-link">Về chúng tôi</a><i
+                                    class="fa-solid fa-angle-down"></i>
+                                <div class="megamenu--mobile">
+                                    <ul class="single-mega cn-col-4">
+                                        <li class="title">Doanh nghiệp 1</li>
+                                        <li><a href="#">Doanh nghiệp con 1.1</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.2</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.3</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.4</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.5</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.6</a></li>
+                                        <li><a href="#">Doanh nghiệp con 1.7</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Khoá học & Chương trình </a><i
+                                    class="fa-solid fa-angle-down"></i>
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Thư viện</a><i class="fa-solid fa-angle-down"></i>
+
+                            </li>
+                            <li><a href="#" class="nav__mobile-link">Tin tức & Tuyển dụng</a><i
+                                    class="fa-solid fa-angle-down"></i></li>
+                        </ul>
+                        <!-- icon X -->
+                        <label for="nav__input" class="nav__mobile-btn">
+                            <i class="fa-solid fa-x" style="font-size: 25px;"></i>
+                        </label>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- end menu--header -->
+        <section class="section--library">
+            <div class="section--library--img1">
+                <img src="img/Ellipse 214.png" alt="">
+            </div>
+            <div class="section--library--img2">
+                <img src="img/Ellipse 215.png" alt="">
+            </div>
+            <div class="section--library--img3">
+                <img src="img/Rectangle 103401.png" alt="">
+            </div>
+            <div class="container">
+                <div class="section--library--center">
+                    <h2>Thư viện video</h2>
+                    <div class="div--breadcrumb">
+                        <ul>
+                            <li><a href="">Trang chủ &nbsp;</a></li>
+                            <li>/ &nbsp;</li>
+                            <li><a href="">Thư viện video</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end library -->
+        <section class="sectiton--album--img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video1"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video2"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video3"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video4"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video5"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12">
+                        <div class="sectiton--album--img__item column">
+                            <p class="imglist">
+                                <a href="https://www.youtube.com/watch?v=K8k7U71SPDA" data-fancybox="video6"
+                                    data-caption="Hình 1">
+                                    <img src="img/confident-teacher-explaining-lesson-pupils 3.png" />
+                                </a>
+                            </p>
+                            <div class="sectiton--album--img__bg">
+                                <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
+                            </div>
+                            <h4>Video hoạt động</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end album img -->
+        <section class="section--pagination">
+            <div class="container">
+                <div class="pagination">
+                    <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">...</a>
+                    <a href="#">365</a>
+                    <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="section--store">
+            <div class="container">
+                <h4>Hệ thống cửa hàng</h4>
+                <div class="row section--store--row" style="margin-right: 0px; margin-left: 0px;">
+                    <div class="col-md-6 col-sm-12" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="tab-content">
+                            <div id="map1" class="tab-pane active">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map2" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map3" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map4" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map5" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map6" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 84.png" alt="">
+                                </div>
+                            </div>
+                            <div id="map7" class="tab-pane">
+                                <div class="section--store--left">
+                                    <img src="img/image 208.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12" style="padding-right: 0px;padding-left: 0px;">
+                        <div class="section--store--right">
+                            <div class="section--store--right__border">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="active active-tab" data-toggle="tab" href="#map1">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 1</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map2">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 2</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 362 Đường 3/2, P12, Quận 10</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map3">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 3</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 264F Bạch Đằng, P24, Bình Thạnh</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map4">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 4</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 383 Nguyễn Trọng Tuyển, Phường 2, Tân Bình</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map5">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 5</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map6">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 6</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="" data-toggle="tab" href="#map7">
+                                            <div class="section--store--right--row">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__img">
+                                                            <img src="img/317.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-sm-6 col-6">
+                                                        <div class="section--store--right__border__text">
+                                                            <h6>Chi nhánh 7</h6>
+                                                            <div class="section--store--right__border__icon">
+                                                                <i class="fa-solid fa-location-dot"></i>
+                                                                <p>&nbsp; 881 Phan Văn Trị, P7, Gò Vấp</p>
+                                                            </div>
+                                                            <div class="section--store--right__border__phone">
+                                                                <i class="fa-solid fa-phone-volume"></i>
+                                                                <p>&nbsp; 0905 595 300</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section store -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer--logo">
+                    <a href="/"><img src="img/Asset 111.png" alt="" style="width: 260px;height: 58px;"></a>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-sm-6 col-12" style="padding-right: 20px;">
+                        <div class="footer--adress">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>&nbsp; Địa chỉ: 1264/47/17 Lê Đức Thọ, Phường 13, Quận Gò Vấp, Tp.HCM.</p>
+                        </div>
+                        <div class="footer--phone">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <p>&nbsp; Hotline : 18006025</p>
+                        </div>
+                        <div class="footer--mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto: contact@truongthinh.info">&nbsp; Email: contact@truongthinh.info</a>
+                        </div>
+                        <div class="footer--conect">
+                            <p>Kết nối: </p>
+                            <div class="footer--conect--socal">
+                                <a href=""> <i class="fa-brands fa-facebook-f" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-instagram" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-tiktok" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-youtube" style="font-size: 20px;"></i></a>
+                                <a href=""> <i class="fa-brands fa-telegram" style="font-size: 20px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-12">
+                        <div class="row" style="gap: 30px 0;">
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--learn">
+                                    <h6>Khoá học</h6>
+                                    <ul>
+                                        <li><a href="">Khoá học Figma</a></li>
+                                        <li><a href="">Khoá học sửa chữa</a></li>
+                                        <li><a href="">Khoá học phần mềm</a></li>
+                                        <li><a href="">Khoá học lập trình</a></li>
+                                        <li><a href="">Khoá học hệ thống nhúng</a></li>
+                                        <li><a href="">Khoá học quản lý</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--lienket">
+                                    <h6>Liên kết</h6>
+                                    <ul>
+                                        <li><a href="">Giới thiệu</a></li>
+                                        <li><a href="">Đối tác</a></li>
+                                        <li><a href="">Thư viện hình ảnh</a></li>
+                                        <li><a href="">Thư viện video</a></li>
+                                        <li><a href="">Tin tức & Tuyển dyhng</a></li>
+                                        <li><a href="">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-12">
+                                <div class="footer--other">
+                                    <h6>Khác</h6>
+                                    <ul>
+                                        <li><a href="">Điều khoản sử dụng</a></li>
+                                        <li><a href="">Chính sách bảo mật</a></li>
+                                        <li><a href="">Site map</a></li>
+                                        <li><a href="">Thư viện video</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="opacity: 0.15; background: #FFF;">
+                <div class="footer--copy text-center">
+                    <p>Copyright &copy;
+                        <script>document.write(new Date().getFullYear())</script> Trường Thịnh Group. All Rights
+                        Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- link xuống dưới jquery min -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--  JS fontawesome -->
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            buttons: [
+                'close'
+            ],
+            wheel: false,
+            transitionEffect: "slide",
+            loop: true,
+            toolbar: true,
+            clickContent: false,
+            thumbs: {
+                autoStart: true, // Tự động hiển thị các hình ảnh nhỏ dưới hình ảnh lớn
+                axis: "x" // Các hình ảnh nhỏ được hiển thị ngang (theo trục x)
+            }
+        });
+    </script>
+</body>
+
+</html>
