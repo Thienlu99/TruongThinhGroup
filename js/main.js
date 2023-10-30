@@ -1,4 +1,26 @@
 $(document).ready(function () {
+  // -----menu color ul
+  // // Kiểm tra nếu đã có trạng thái active lưu trong localStorage
+  // const activeIndex = localStorage.getItem("activeIndex");
+
+  // // Nếu đã có trạng thái active, đặt lại nó khi trang tải
+  // if (activeIndex) {
+  //   $(".menu--header__menu--ul a").removeClass("active");
+  //   $(".menu--header__menu--ul a").eq(activeIndex).addClass("active");
+  // }
+
+  // // Thêm sự kiện click vào từng li trong menu
+  // $(".menu--header__menu--ul a").click(function () {
+  //   // Xóa trạng thái active khỏi tất cả các li
+  //   $(".menu--header__menu--ul a").removeClass("active");
+
+  //   // Đặt trạng thái active cho li được click
+  //   $(this).addClass("active");
+
+  //   // Lưu trạng thái active vào localStorage
+  //   localStorage.setItem("activeIndex", $(this).index());
+  // });
+
   // ----menu responsive--------------
   // Bắt sự kiện click trên thẻ cha <li>
   $(".nav__mobile-list i").click(function () {
@@ -105,4 +127,5 @@ $(document).ready(function () {
       }
     });
   }
+ 
 });

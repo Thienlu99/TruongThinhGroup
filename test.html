@@ -28,129 +28,360 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/responsive.css">
   <style>
-    a {
-      text-decoration: none;
-    }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+:root {
+   --color-white-100: hsl(206, 5%, 100%);
+   --color-white-200: hsl(206, 5%, 90%);
+   --color-white-300: hsl(206, 5%, 80%);
+   --color-white-400: hsl(206, 5%, 60%);
+   --color-white-500: hsl(206, 5%, 50%);
 
-    h3 {
-      font-size: 32px;
-      line-height: 42px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      margin-top: 15px;
-      width: 70%;
-    }
+   --color-black-100: hsl(213, 23%, 8%);
+   --color-black-200: hsl(214, 21%, 6%);
+   --color-black-300: hsl(210, 21%, 6%);
+   --color-black-400: hsl(216, 22%, 4%);
+   --color-black-500: hsl(220, 18%, 3%);
+
+   --color-pink-100: hsl(326, 85%, 90%);
+   --color-pink-200: hsl(327, 87%, 80%);
+   --color-pink-300: hsl(329, 86%, 70%);
+   --color-pink-400: hsl(330, 81%, 60%);
+   --color-pink-500: hsl(333, 71%, 50%);
+
+   --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+      0 1px 2px 0 rgba(0, 0, 0, 0.06);
+   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+   --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style: none;
+   list-style-type: none;
+   text-decoration: none;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
+}
 
 
-    .image-magnific {
-      width: 70%;
-    }
 
-    .gallery {
+
+
+a,
+button {
+   cursor: pointer;
+   border: none;
+   outline: none;
+   user-select: none;
+   background: none;
+   box-shadow: none;
+}
+
+img,
+video {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+
+
+
+.brand {
+   font-family: inherit;
+   font-size: 1.6rem;
+   font-weight: 700;
+   line-height: 1.25;
+   letter-spacing: -1px;
+   text-transform: uppercase;
+   color: var(--color-pink-500);
+}
+
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: auto;
+   z-index: 100;
+   margin: 0 auto;
+   box-shadow: var(--shadow-medium);
+   background-color: var(--color-white-100);
+}
+
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   column-gap: 1rem;
+   row-gap: 2rem;
+   width: 100%;
+   height: 4rem;
+   margin: 0 auto;
+}
+
+
+
+
+
+
+  .menu-item {
+      position: relative;
+      display: inline-block;
+      margin-left: 1.5rem;
+   }
+
+   .menu-link {
       display: flex;
       justify-content: center;
-      margin-top: 3px;
-      width: 70%;
-
-      .gallery-magnific {
-        width: 35%;
-        height: 15vw;
-        padding-bottom: 4.5vw;
+      align-items: center;
+      column-gap: 0.25rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: inherit;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: var(--color-black-500);
+      transition: all 0.3s ease-in-out;
+   }
+      .menu > i.bx {
+         font-size: 1.35rem;
+         line-height: 1.5;
+         color: inherit;
       }
 
-      .gallery-magnific:not(:last-child) {
-        margin-right: 5px;
+      .menu:hover {
+         outline: none;
+         color: var(--color-pink-500);
+      }
+   
+ 
+ 
+   /* @media only screen and (min-width: 993px) {
+      &-dropdown:hover {
+         > .submenu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+         }
+      }
+   } */
+
+
+   /* @media only screen and (max-width: 992px) {
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+
+      &-item {
+         display: block;
+         margin: 0 auto;
       }
 
-      .title,
-      .author {
-        font-weight: 700;
-        color: #000;
+      &-link {
+         justify-content: space-between;
+         padding: 0.5rem 1.25rem;
       }
+   } */
 
-      .title {
-        font-size: 1.1vw;
-        margin-bottom: 5px;
-        margin-top: 10px;
+
+
+.submenu {
+   position: absolute;
+   top: 2.35rem;
+   left: -2rem;
+   min-width: 13rem;
+   height: auto;
+   padding: 0 1rem 1rem;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(1rem);
+   border-radius: 0 0 0.25rem 0.25rem;
+   border-top: 2px solid var(--color-pink-400);
+   box-shadow: var(--shadow-medium);
+   background-color: var(--color-white-100);
+   transition: all 0.3s ease-in-out;
+  }
+  .submenu-item {
+      display: block;
+      margin-top: 0.75rem;
+   }
+
+   .submenu-link {
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: inherit;
+      cursor: pointer;
+      color: var(--color-black-500);
+      transition: all 0.35s ease;
+
+      .submenu:hover {
+         outline: none;
+         color: var(--color-pink-500);
       }
+   }
 
-      .author {
-        font-weight: 400;
-        font-size: 1vw;
+   
+   /* @media only screen and (max-width: 992px) {
+      position: relative;
+      top: -0.5rem;
+      left: 2.5rem;
+      width: 100%;
+      max-height: 0;
+      padding: 0px;
+      border: none;
+      outline: none;
+      opacity: 1;
+      overflow: hidden;
+      visibility: visible;
+      transform: translateY(0px);
+      box-shadow: none;
+      background: transparent;
+   } */
+
+
+.burger {
+   position: relative;
+   display: none;
+   cursor: pointer;
+   user-select: none;
+   width: 1.6rem;
+   height: 1.15rem;
+   opacity: 0;
+   visibility: hidden;
+   background: transparent;
+  }
+  .burger-line {
+      position: absolute;
+      display: block;
+      right: 0;
+      width: 100%;
+      height: 2.1px;
+      opacity: 1;
+      border: none;
+      outline: none;
+      border-radius: 1rem;
+      background: var(--color-black-500);
+  }
+  .burger:nth-child(1) {
+         top: 0px;
       }
-    }
+      .burger:nth-child(2) {
+         top: 0.5rem;
+         width: 70%;
+      }
+      .burger:nth-child(3) {
+         top: 1rem;
+      }
+   
+ 
+   /* @media only screen and (max-width: 992px) {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+   } */
 
-    .video-youtube {
-      width: 70%;
-      margin-top: 5px;
-    }
 
 
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 9;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.35s ease-in-out;
+   background-color: rgba(0, 0, 0, 0.65);
+}
+   @media only screen and (max-width: 992px) {
+      .overlay.active {
+         display: block;
+         opacity: 1;
+         visibility: visible;
+      }
+   }
 
-    .mfp-zoom-out-cur,
-    .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-      cursor: default;
-    }
 
-    .mfp-close {
-      cursor: pointer !important;
-      width: 20px !important;
-      height: 20px !important;
-      line-height: 16px !important;
-      margin-top: 10px;
-    }
   </style>
 </head>
-
 <body>
-  <h3>One Image</h3>
-  <a class="image-magnific" title="Golden Gate Bridge, San Francisco, United States"
-    href="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-    <img
-      src="https://images.unsplash.com/photo-1490598000245-075175152d25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-      alt="img">
-  </a>
-
-  <h3>Gallery</h3>
-  <div class="slider">
-    <div class="gallery">
-      <a class="gallery-magnific"
-      href="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-      data-mfp-src="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-      <img
-        src="https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto.format&fit=crop&w=1170&q=80"
-        alt="gallery__img1">
-      <h5 class="title">Pfeiffer Beach, United States</h5>
-      <div class="author">Willian Justen de Vasconcellos</div>
-    </a>
-    <a class="gallery-magnific" href="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-      <img src="https://images.unsplash.com/photo-1580137189272-c9379f8864fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="gallery__img2">
-      <h5 class="title">Grindelwald, Suíça</h5>
-      <div class="author">Kace Rodriguez</div>
-    </a>
-    <a class="gallery-magnific" href="https://images.unsplash.com/photo-1645814111458-636f22786ca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80">
-      <img src="https://images.unsplash.com/photo-1645814111458-636f22786ca3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="gallery__img3">
-      <h5 class="title">India</h5>
-      <div class="author">Janmesh Shah</div>
-    </a>
-    </div>
+  <div class="dropdown">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton"
+      data-mdb-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
   </div>
+  <header class="header" id="header">
+    <section class="wrapper container">
+       <a href="./index.html" class="brand">Brand</a>
+       <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+       </div>
+       <span class="overlay"></span>
+       <nav class="navbar" id="navbar">
+          <ul class="menu" id="menu">
+             <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Feature<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="#" class="submenu-link">Feature Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Feature Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Feature Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Feature Link</a></li>
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Discover<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="#" class="submenu-link">Discover Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Discover Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Discover Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Discover Link</a></li>
+                </ul>
+             </li>
+             <li class="menu-item menu-dropdown">
+                <span class="menu-link" data-toggle="submenu">Resource<i class="bx bx-chevron-down"></i></span>
+                <ul class="submenu">
+                   <li class="submenu-item"><a href="#" class="submenu-link">Resource Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Resource Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Resource Link</a></li>
+                   <li class="submenu-item"><a href="#" class="submenu-link">Resource Link</a></li>
+                </ul>
+             </li>
+             <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          </ul>
+       </nav>
+    </section>
+ </header>
 
-
-
-  <h3>Youtube Video</h3>
-  <a class="video-youtube" href="https://www.youtube.com/watch?v=6WJ13zrscxs">
-    <img
-      src="https://images.unsplash.com/photo-1475656106224-d72c2ab53e8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-      alt="video__img">
-  </a>
+  <div class="overlay"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -164,33 +395,65 @@
   <script src="js/main.js"></script>
   <script src="js/slick.js"></script>
   <script>
-    // One Image
-    $(".image-magnific").magnificPopup({
-      type: "image"
-    });
+   const navbarMenu = document.getElementById("navbar");
+const burgerMenu = document.getElementById("burger");
+const overlayMenu = document.querySelector(".overlay");
 
-    // Gallery
-    $(".gallery-magnific").magnificPopup({
-      type: "image",
-      gallery: {
-        enabled: true
-      },
-      image: {
-        titleSrc: function (item) {
-          return (
-            item.el.find(".title").html() +
-            `<small>${item.el.find(".author").html()}</small>`
-          );
-        }
+// Show and Hide Navbar Function
+const toggleMenu = () => {
+   navbarMenu.classList.toggle("active");
+   overlayMenu.classList.toggle("active");
+};
+
+// Collapsible Mobile Submenu Function
+const collapseSubMenu = () => {
+   navbarMenu
+      .querySelector(".menu-dropdown.active .submenu")
+      .removeAttribute("style");
+   navbarMenu.querySelector(".menu-dropdown.active").classList.remove("active");
+};
+
+// Toggle Mobile Submenu Function
+const toggleSubMenu = (e) => {
+   if (e.target.hasAttribute("data-toggle") && window.innerWidth <= 992) {
+      e.preventDefault();
+      const menuDropdown = e.target.parentElement;
+
+      // If Dropdown is Expanded, then Collapse It
+      if (menuDropdown.classList.contains("active")) {
+         collapseSubMenu();
+      } else {
+         // Collapse Existing Expanded Dropdown
+         if (navbarMenu.querySelector(".menu-dropdown.active")) {
+            collapseSubMenu();
+         }
+
+         // Expanded the New Dropdown
+         menuDropdown.classList.add("active");
+         const subMenu = menuDropdown.querySelector(".submenu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
       }
-    });
+   }
+};
 
-    // Youtube Video
-    $(".video-youtube").magnificPopup({
-      type: "iframe",
-      removalDelay: 160,
-      preloader: false
-    });
+// Fixed Resize Window Function
+const resizeWindow = () => {
+   if (window.innerWidth > 992) {
+      if (navbarMenu.classList.contains("active")) {
+         toggleMenu();
+      }
+      if (navbarMenu.querySelector(".menu-dropdown.active")) {
+         collapseSubMenu();
+      }
+   }
+};
+
+// Initialize Event Listeners
+burgerMenu.addEventListener("click", toggleMenu);
+overlayMenu.addEventListener("click", toggleMenu);
+navbarMenu.addEventListener("click", toggleSubMenu);
+window.addEventListener("resize", resizeWindow);
+
 
   </script>
 </body>

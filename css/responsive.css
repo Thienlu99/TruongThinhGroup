@@ -1,101 +1,165 @@
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1190px;
-    }
+  .container {
+    max-width: 1190px;
   }
+}
 @media (max-width: 768px) {
-    /* page home */
-    .filtering .div--card--box h3{
-        font-size: 32px;
-    }
-    .giangvien--text h3 {
-        font-size: 32px;
-    }
-    .mySwiper--text h4 {
-        font-size: 32px;
-    }
-    .section--media--title{
-        margin-top: 40px;
-    }
-    .section--media--title h4{
-       font-size: 32px;
-    }
-    .section--partner h4{
-        font-size: 32px;
-    }
-    .section--learn--text__box h5{
-        font-size: 32px;
-    }
-    .section--partner--box__img{
-        width: 100%;
-    }
-    .section--active h4{
-        font-size: 32px;
-    }
-    .section--store h4 {
-        font-size: 32px;
-        padding-top: 30px;
+  /* page home */
+  .filtering .div--card--box h3 {
+    font-size: 32px;
   }
-  .section--store{
+  .giangvien--text h3 {
+    font-size: 32px;
+  }
+  .mySwiper--text h4 {
+    font-size: 32px;
+  }
+  .section--media--title {
+    margin-top: 40px;
+  }
+  .section--media--title h4 {
+    font-size: 32px;
+  }
+  .section--partner h4 {
+    font-size: 32px;
+  }
+  .section--learn--text__box h5 {
+    font-size: 32px;
+  }
+  .section--partner--box__img {
+    width: 100%;
+  }
+  .section--active h4 {
+    font-size: 32px;
+  }
+  .section--store h4 {
+    font-size: 32px;
+    padding-top: 30px;
+  }
+  .section--store {
     padding-bottom: 30px;
   }
-  .banner--position--img{
+  .banner--position--img {
     width: 19%;
     height: 20%;
   }
-  .swiper-slide--box__img{
+  .swiper-slide--box__img {
     width: 80%;
-}
-
+  }
+  .section--partner--box {
+    justify-content: flex-start;
+  }
+  /* page 3 */
+  .section--about--page3--positon__img3 {
+    display: none;
+  }
+  /* page tin tức */
+  .post--lienquan {
+    padding-top: 80px;
+  }
+  .post--lienquan h3 {
+    font-size: 30px;
+  }
+  /* page khóa học chi tiết */
+  .single--course--content .accordion-content header .title {
+    font-size: 15px !important;
+  }
+  .FAQ h3 {
+    font-size: 26px;
+  }
+  .single--course--FAQ .title {
+    font-size: 16px !important;
+  }
+  .section--contact--text h4{
+    font-size: 18px;
+  }
 }
 @media (max-width: 540px) {
-/* page home */
-.section--about .section--about--video iframe{
+  /* page home */
+  .section--about--video iframe {
     width: 99% !important;
-}
-.filtering .div--card--box h3{
+  }
+  .filtering .div--card--box h3 {
     font-size: 28px;
-}
-.giangvien--text h3 {
+  }
+  .giangvien--text h3 {
     font-size: 28px;
-}
-.mySwiper--text h4 {
+  }
+  .mySwiper--text h4 {
     font-size: 28px;
-}
-.swiper-slide--box__img{
+  }
+  .swiper-slide--box__img {
     width: 20%;
-}
-.section--media--title h4{
+  }
+  .section--media--title h4 {
     font-size: 28px;
-}
-.section--partner h4{
+  }
+  .section--partner h4 {
     font-size: 28px;
-}
-.section--learn--text__box h5{
+  }
+  .section--learn--text__box h5 {
     font-size: 28px;
-}
-.section--partner--box__img{
+  }
+  .section--partner--box__img {
     width: 100%;
-}
-.section--active h4{
+  }
+  .section--active h4 {
     font-size: 28px;
-}
-.section--store h4 {
+  }
+  .section--store h4 {
     font-size: 28px;
-    
-}
-/* .section--store--right__border__img{
+  }
+  /* .section--store--right__border__img{
     width: 40%;
 } */
-.section--media--title{
+  .section--media--title {
     text-align: start !important;
-}
-.section--media--title p{
- margin: 0;
- width: 100%;
-}
-.section--media .section--about--text__all--link{
-    margin: 0 0 30px 0 !important;
-}
-
   }
+  .section--media--title p {
+    margin: 0;
+    width: 100%;
+  }
+  .section--media .section--about--text__all--link {
+    margin: 0 0 30px 0 !important;
+  }
+
+  /* page 3 */
+  .section--about--page3 h2 {
+    font-size: 26px;
+    padding-top: 20px;
+  }
+  .section--timeline h2 {
+    font-size: 26px;
+  }
+  .section--visson h3 {
+    font-size: 26px;
+  }
+  .seciton--value--bg h3 {
+    font-size: 26px;
+  }
+  .section--library--center h2 {
+    font-size: 26px;
+  }
+  .section--library--center h4 {
+    font-size: 20px;
+  }
+  /* page tin tức */
+  .post--lienquan h3 {
+    font-size: 26px;
+  }
+  .content--single--news--author__img {
+    width: 50%;
+  }
+  .post--viewhight__img {
+    width: 70%;
+  }
+  /* page khóa học */
+  
+  .single--course--FAQ .title {
+    font-size: 14px !important;
+  }
+  /* page liên hệ */
+  .banner--contact {
+    margin-top: -50px;
+}
+}
