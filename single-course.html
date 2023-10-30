@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="menu--header--all">
                     <div class="menu--header__img">
-                        <a href="/index.html">
+                        <a href="./index.html">
                             <picture>
                                 <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
                                 <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
@@ -155,21 +155,31 @@
                         </ul>
                     </nav>
                     <div class="header--search--contact nav__pc">
-                        <div class="header--search--icon" style="position: relative;;">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <!-- <div class="search-form" style="position: absolute;z-index: 2;">  
-                                <form>
-                                    <div class="input-group">
-                                        <div class="form-outline">
-                                          <input type="search" id="form1" class="form-control" />
-                                          <label class="form-label" for="form1">Search</label>
+                        <div class="header--search--icon" style="position: relative;">
+
+                            <div id='searchParent'>
+                                <!--icon to be hovered-->
+                                <div class="dropdown--search">
+                                    <i class="fa-solid fa-magnifying-glass class--searchform" id="search"></i>
+                                    <!--icon to be hovered-->
+                                    <form action="" class="form--dropdown--search">
+                                        <div id="inputParent" class="parentc">
+                                            <div class=" row">
+                                                <!--input to be shown-->
+
+                                                <input class="col-md-10 form-control" type="text"
+                                                    placeholder='Tìm kiếm...' autocomplete='off' id="input-bar"
+                                                    style=" background-color: #fff;">
+                                                <button class="col-md-2 btn btn-success">
+                                                    <i class="fa-solid fa-magnifying-glass"
+                                                        style="font-size: 20px;color: #fff;"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary">
-                                          <i class="fas fa-search"></i>
-                                        </button>
-                                      </div>
-                                </form>
-                            </div> -->
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="header--contact">
                             <a href="contact.html">Liên hệ</a>
@@ -183,10 +193,13 @@
                     <nav class="nav__mobile">
                         <ul class="nav__mobile-list">
                             <li class="nav__mobile-link">
-                                <form action="">
-                                    <input type="search" class="form-control" placeholder="tìm kiếm"
-                                        style="height: 34px;width: 180px;">
-                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                <form action="" class="form__mobile--list">
+                                    <div class="div__mobile--list row">
+                                        <input type="search" class="form-control col-10" placeholder="tìm kiếm"
+                                            >
+                                        <button class="btn btn-success col-2"> <i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
                                 </form>
                             </li>
                             <li><a href="contact.html" class="nav__mobile-link">Liên Hệ</a> </li>
@@ -214,6 +227,7 @@
                 </div>
             </div>
         </section>
+        <!-- end menu--header -->
         <!-- end menu--header -->
         <section class="banner--single--course">
             <div class="banner--single--course__img">
@@ -274,8 +288,8 @@
                     <div class="col-md-8 col-sm-6 col-12">
                         <div class="single--course--content__right">
                             <div class="fui-accordion">
-                                <div class="accordion-content">
-                                    <header>
+                                <div class="accordion-content accordion-content--course">
+                                    <header >
                                         <span class="title">Module 1: Lorem ipsum dolor sit amet</span>
                                         <span class="icon icon-plus">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -490,7 +504,7 @@
                                     </div>
                                 </div>
 
-                                <div class="accordion-content">
+                                <div class="accordion-content accordion-content--course">
                                     <header>
                                         <span class="title">Module 2: Lorem ipsum dolor sit amet</span>
                                         <span class="icon icon-plus">
@@ -704,7 +718,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-content">
+                                <div class="accordion-content accordion-content--course">
                                     <header>
                                         <span class="title">Module 3: Lorem ipsum dolor sit amet</span>
                                         <span class="icon icon-plus">
@@ -918,7 +932,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-content">
+                                <div class="accordion-content accordion-content--course">
                                     <header>
                                         <span class="title">Module 4: Lorem ipsum dolor sit amet</span>
                                         <span class="icon icon-plus">
@@ -1461,9 +1475,9 @@
                 <h3>Câu hỏi thường gặp</h3>
                 <div class="single--course--FAQ">
                     <div class="fui-accordion">
-                        <div class="accordion-content">
-                            <header>
-                                <span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                        <div class="accordion-content accordion-content--FAQ">
+                            <header class="single--course--FAQ--header">
+                                <span class="title title2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                                 <span class="icon icon-plus">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                         fill="none">
@@ -1500,9 +1514,9 @@
                             </div>
                         </div>
 
-                        <div class="accordion-content">
-                            <header>
-                                <span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                        <div class="accordion-content accordion-content--FAQ">
+                            <header class="single--course--FAQ--header">
+                                <span class="title title2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                                 <span class="icon icon-plus">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                         fill="none">
@@ -1538,9 +1552,9 @@
 
                             </div>
                         </div>
-                        <div class="accordion-content">
+                        <div class="accordion-content accordion-content--FAQ">
                             <header>
-                                <span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                <span class="title title2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                                 <span class="icon icon-plus">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                         fill="none">
@@ -1576,9 +1590,9 @@
 
                             </div>
                         </div>
-                        <div class="accordion-content">
+                        <div class="accordion-content accordion-content--FAQ">
                             <header>
-                                <span class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+                                <span class="title title2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
                                 <span class="icon icon-plus">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                         fill="none">

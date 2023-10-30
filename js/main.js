@@ -1,26 +1,5 @@
 $(document).ready(function () {
-  // -----menu color ul
-  // // Kiểm tra nếu đã có trạng thái active lưu trong localStorage
-  // const activeIndex = localStorage.getItem("activeIndex");
-
-  // // Nếu đã có trạng thái active, đặt lại nó khi trang tải
-  // if (activeIndex) {
-  //   $(".menu--header__menu--ul a").removeClass("active");
-  //   $(".menu--header__menu--ul a").eq(activeIndex).addClass("active");
-  // }
-
-  // // Thêm sự kiện click vào từng li trong menu
-  // $(".menu--header__menu--ul a").click(function () {
-  //   // Xóa trạng thái active khỏi tất cả các li
-  //   $(".menu--header__menu--ul a").removeClass("active");
-
-  //   // Đặt trạng thái active cho li được click
-  //   $(this).addClass("active");
-
-  //   // Lưu trạng thái active vào localStorage
-  //   localStorage.setItem("activeIndex", $(this).index());
-  // });
-
+ 
   // ----menu responsive--------------
   // Bắt sự kiện click trên thẻ cha <li>
   $(".nav__mobile-list i").click(function () {
@@ -71,7 +50,7 @@ $(document).ready(function () {
   //     console.log("hi");
   //   });
   // -----end
-  // -------------table of content
+  // -------------table of content------
   const toggle = $(".toggle");
   const nav_bar = $(".table-of-contents");
   const list = $(".table__list");
@@ -82,23 +61,22 @@ $(document).ready(function () {
     // } else {
     //   toggle.text("hide");
     // }
-
     list.toggleClass("list-invisible");
     nav_bar.toggleClass("table-narrow");
   });
-  //-------end
-  // --------gập trải
-  const accordionContent = document.querySelectorAll(
-    ".fui-accordion .accordion-content"
+  //-------end table of content------------
+  // ------------gập trải course----------
+  const accordionContent1 = document.querySelectorAll(
+    ".fui-accordion .accordion-content--course"
   );
-  accordionContent.forEach((item, index) => {
+  accordionContent1.forEach((item, index) => {
     const iconPlus = item.querySelector(".fui-accordion .icon-plus");
     const iconMinus = item.querySelector(".fui-accordion .icon-minus");
-    let header = item.querySelector("header");
+    var header = item.querySelector("header");
     item.classList.remove("open");
     header.addEventListener("click", () => {
       item.classList.toggle("open");
-
+  
       let description = item.querySelector(".description");
       if (item.classList.contains("open")) {
         description.style.height = `${description.scrollHeight}px`;
@@ -109,17 +87,18 @@ $(document).ready(function () {
         iconPlus.classList.remove("hidden");
         iconMinus.classList.remove("active");
       }
-      removeOpen(index);
+      // removeOpen1
+      removeOpen1(index);
     });
   });
-
-  function removeOpen(index1) {
-    accordionContent.forEach((item2, index2) => {
+  
+  function removeOpen1(index1) {
+    accordionContent1.forEach((item2, index2) => {
       const iconPlus = item2.querySelector(".fui-accordion .icon-plus");
       const iconMinus = item2.querySelector(".fui-accordion .icon-minus");
       if (index1 != index2) {
         item2.classList.remove("open");
-
+  
         let des = item2.querySelector(".description");
         des.style.height = "0px";
         iconPlus.classList.remove("hidden");
@@ -127,5 +106,49 @@ $(document).ready(function () {
       }
     });
   }
- 
+  //-------end gập trải course---------
+  // --------gập trải FAQ ------------
+  const accordionContent = document.querySelectorAll(
+    ".fui-accordion .accordion-content--FAQ"
+  );
+  accordionContent.forEach((item, index) => {
+    const iconPlus = item.querySelector(".fui-accordion .icon-plus");
+    const iconMinus = item.querySelector(".fui-accordion .icon-minus");
+    var header = item.querySelector("header");
+    item.classList.remove("open");
+    header.addEventListener("click", () => {
+      item.classList.toggle("open");
+  
+      let description = item.querySelector(".description");
+      if (item.classList.contains("open")) {
+        description.style.height = `${description.scrollHeight}px`;
+        iconPlus.classList.add("hidden");
+        iconMinus.classList.add("active");
+        item.querySelector(".title2").style.color = "#f7931e";
+      } else {
+        description.style.height = "0px";
+        iconPlus.classList.remove("hidden");
+        iconMinus.classList.remove("active");
+        item.querySelector(".title2").style.color = "";
+      }
+      removeOpen(index);
+    });
+  });
+  
+  function removeOpen(index1) {
+    accordionContent.forEach((item2, index2) => {
+      const iconPlus = item2.querySelector(".fui-accordion .icon-plus");
+      const iconMinus = item2.querySelector(".fui-accordion .icon-minus");
+      if (index1 != index2) {
+        item2.classList.remove("open");
+  
+        let des = item2.querySelector(".description");
+        des.style.height = "0px";
+        iconPlus.classList.remove("hidden");
+        iconMinus.classList.remove("active");
+        item2.querySelector(".title2").style.color = "";
+      }
+    });
+  }
 });
+

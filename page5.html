@@ -100,7 +100,7 @@
             <div class="container">
                 <div class="menu--header--all">
                     <div class="menu--header__img">
-                        <a href="/index.html">
+                        <a href="./index.html">
                             <picture>
                                 <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
                                 <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
@@ -152,21 +152,31 @@
                         </ul>
                     </nav>
                     <div class="header--search--contact nav__pc">
-                        <div class="header--search--icon" style="position: relative;;">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <!-- <div class="search-form" style="position: absolute;z-index: 2;">  
-                                <form>
-                                    <div class="input-group">
-                                        <div class="form-outline">
-                                          <input type="search" id="form1" class="form-control" />
-                                          <label class="form-label" for="form1">Search</label>
+                        <div class="header--search--icon" style="position: relative;">
+
+                            <div id='searchParent'>
+                                <!--icon to be hovered-->
+                                <div class="dropdown--search">
+                                    <i class="fa-solid fa-magnifying-glass class--searchform" id="search"></i>
+                                    <!--icon to be hovered-->
+                                    <form action="" class="form--dropdown--search">
+                                        <div id="inputParent" class="parentc">
+                                            <div class=" row">
+                                                <!--input to be shown-->
+
+                                                <input class="col-md-10 form-control" type="text"
+                                                    placeholder='Tìm kiếm...' autocomplete='off' id="input-bar"
+                                                    style=" background-color: #fff;">
+                                                <button class="col-md-2 btn btn-success">
+                                                    <i class="fa-solid fa-magnifying-glass"
+                                                        style="font-size: 20px;color: #fff;"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary">
-                                          <i class="fas fa-search"></i>
-                                        </button>
-                                      </div>
-                                </form>
-                            </div> -->
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="header--contact">
                             <a href="contact.html">Liên hệ</a>
@@ -180,10 +190,13 @@
                     <nav class="nav__mobile">
                         <ul class="nav__mobile-list">
                             <li class="nav__mobile-link">
-                                <form action="">
-                                    <input type="search" class="form-control" placeholder="tìm kiếm"
-                                        style="height: 34px;width: 180px;">
-                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                                <form action="" class="form__mobile--list">
+                                    <div class="div__mobile--list row">
+                                        <input type="search" class="form-control col-10" placeholder="tìm kiếm"
+                                            >
+                                        <button class="btn btn-success col-2"> <i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
                                 </form>
                             </li>
                             <li><a href="contact.html" class="nav__mobile-link">Liên Hệ</a> </li>
@@ -221,17 +234,18 @@
             </div>
             <div class="section--library--img3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="625" height="40" viewBox="0 0 625 40" fill="none">
-                    <path d="M46 5C52.295 1.14881 59.8077 0 67.1873 0H625V40H0C0 40 13 40 20 35C32.6156 25.9888 32.7752 13.0907 46 5Z" fill="white"/>
-                    </svg>
+                    <path
+                        d="M46 5C52.295 1.14881 59.8077 0 67.1873 0H625V40H0C0 40 13 40 20 35C32.6156 25.9888 32.7752 13.0907 46 5Z"
+                        fill="white" />
+                </svg>
             </div>
             <div class="container">
                 <div class="section--library--center">
                     <h2>Thư viện video</h2>
                     <div class="div--breadcrumb">
                         <ul>
-                            <li><a href="">Trang chủ &nbsp;</a></li>
-                            <li>/ &nbsp;</li>
-                            <li><a href="">Thư viện video</a></li>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="/page5.html">Thư viện video</a></li>
 
                         </ul>
                     </div>
@@ -254,7 +268,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
@@ -269,7 +283,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
@@ -284,7 +298,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
@@ -299,7 +313,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
@@ -314,7 +328,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
@@ -329,7 +343,7 @@
                                 <img src="img/confident-teacher-explaining-lesson-pupils 2.png" alt="">
                             </div>
                             <h4 class="sectiton--album--video">Video hoạt động</h4>
-                            
+
                         </div>
                     </div>
                 </div>

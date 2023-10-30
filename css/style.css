@@ -973,15 +973,21 @@ footer i {
   background: #fff;
   box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06);
   display: flex;
+  justify-content: center;
   /* width: 534px; */
   width: 90%;
-  height: 96px;
-  padding: 0 10px;
-  /* padding: 24px; */
+  min-height: 96px;
+  padding: 24px;
   align-items: center;
   gap: 20px;
 }
+.timeline ul li:nth-child(odd) .content{
+  width: 100%;
 
+}
+.content p{
+font-weight: 500;
+}
 .timeline ul li:nth-child(odd):before {
   content: "";
   position: absolute;
@@ -1006,15 +1012,16 @@ footer i {
   box-shadow: 0 0 0 5px rgba(57, 181, 74, 0.35);
 }
 
-.timeline ul li p {
-  /* margin: 10px 0 0; */
-  /* padding: 0; */
-}
+
 
 .timeline ul li .time h4 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  color: var(--second);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
 }
 
 .timeline ul li:nth-child(odd) .time {
@@ -1052,6 +1059,7 @@ footer i {
 }
 
 .section--timeline {
+  padding-bottom: 80px;
   background: #fef6ed;
 }
 .section--timeline h2 {
@@ -1227,8 +1235,8 @@ footer i {
 .section--library {
   position: relative;
   min-height: 280px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   background-color: var(--primary);
 }
 .section--library ul {
@@ -1263,7 +1271,7 @@ footer i {
   right: 0;
 }
 .section--library--center {
-  text-align: center;
+  padding-top: 80px;
 }
 .section--library--center h2 {
   margin-bottom: 20px;
@@ -1277,6 +1285,11 @@ footer i {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px; /* 157.143% */
+}
+
+.div--breadcrumb ul li:not(:last-child):after{
+  content: "/";
+  padding: 0 10px;
 }
 .sectiton--album--img {
   padding-top: 110px;
@@ -1463,12 +1476,16 @@ h4.sectiton--album--video {
   padding-top: 17px;
   width: 80%;
 }
+.sectiton--news--content p{
+  margin-bottom: 0;
+}
 .sectiton--news--pd {
   padding-left: 0;
   padding-right: 0;
 }
 /* page tin tức chi tiết */
 .contact--btn {
+  z-index: 999;
   position: fixed;
   margin-left: 30px;
   margin-top: 72px;
@@ -1657,7 +1674,7 @@ h4.sectiton--album--video {
 }
 .post--viewhight h4 {
   color: var(--primary);
-  /* font-family: Inter; */
+  font-family: Inter;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -1674,7 +1691,7 @@ h4.sectiton--album--video {
 }
 .nav--category h4 {
   color: var(--primary);
-  /* font-family: Inter; */
+  font-family: Inter;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -1686,7 +1703,7 @@ h4.sectiton--album--video {
 }
 .nav--category ul li a {
   color: #001a38;
-  /* font-family: Inter; */
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1731,7 +1748,7 @@ h4.sectiton--album--video {
 }
 .post--viewhight__title h5 {
   color: #001a38;
-  /* font-family: Inter; */
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1868,7 +1885,7 @@ h4.sectiton--album--video {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 64.5px;
+  min-height: 64.5px;
   border-radius: 20px;
   border: 1px solid #e0e0e0;
 }
@@ -2201,11 +2218,15 @@ h4.sectiton--album--video {
   padding-top: 14px;
 }
 .section--contact--text h4 {
+  padding-bottom: 24px;
   color: var(--orange);
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 136.364% */
+}
+.section--contact--text p{
+  margin-bottom: 1.5rem;
 }
 .form--contact {
   padding: 40px;

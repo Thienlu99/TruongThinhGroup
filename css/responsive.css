@@ -50,8 +50,12 @@
     justify-content: flex-start;
   }
   /* page 3 */
+  
   .section--about--page3--positon__img3 {
     display: none;
+  }
+  .seciton--value--bg{
+    padding-bottom: 25px;
   }
   /* page tin tức */
   .post--lienquan {
@@ -160,6 +164,6 @@
   }
   /* page liên hệ */
   .banner--contact {
-    margin-top: -50px;
+    margin-top: -150px;
 }
 }

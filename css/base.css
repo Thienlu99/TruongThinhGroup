@@ -160,7 +160,6 @@ input.nav__input {
 .nav__mobile .nav__mobile-list > li i {
   position: absolute;
   top: 17px;
-  position: absolute;
   right: 13px;
   font-size: 20px;
   cursor: pointer;
@@ -201,6 +200,16 @@ input.nav__input {
 .megamenu--mobile ul li {
   padding: 10px 20px;
   border-top: 1px solid rgb(244, 235, 235);
+}
+/* form search moblile */
+.form__mobile--list .div__mobile--list{
+  padding: 15px;
+}
+.form__mobile--list .div__mobile--list button i{
+  position: relative;
+  top: 0 !important;
+  left: 0 !important;
+  font-size: 15px;
 }
 /* end submenu mobile */
 @media (max-width: 993px) {

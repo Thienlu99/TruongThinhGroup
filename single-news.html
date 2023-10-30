@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Về chúng tôi</title>
     <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link href="https://fonts.cdnfonts.com/css/svn-gilroy" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -101,7 +104,7 @@
             <div class="container">
                 <div class="menu--header--all">
                     <div class="menu--header__img">
-                        <a href="/index.html">
+                        <a href="./index.html">
                             <picture>
                                 <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
                                 <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
@@ -153,21 +156,31 @@
                         </ul>
                     </nav>
                     <div class="header--search--contact nav__pc">
-                        <div class="header--search--icon" style="position: relative;;">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <!-- <div class="search-form" style="position: absolute;z-index: 2;">  
-                                <form>
-                                    <div class="input-group">
-                                        <div class="form-outline">
-                                          <input type="search" id="form1" class="form-control" />
-                                          <label class="form-label" for="form1">Search</label>
+                        <div class="header--search--icon" style="position: relative;">
+
+                            <div id='searchParent'>
+                                <!--icon to be hovered-->
+                                <div class="dropdown--search">
+                                    <i class="fa-solid fa-magnifying-glass class--searchform" id="search"></i>
+                                    <!--icon to be hovered-->
+                                    <form action="" class="form--dropdown--search">
+                                        <div id="inputParent" class="parentc">
+                                            <div class=" row">
+                                                <!--input to be shown-->
+
+                                                <input class="col-md-10 form-control" type="text"
+                                                    placeholder='Tìm kiếm...' autocomplete='off' id="input-bar"
+                                                    style=" background-color: #fff;">
+                                                <button class="col-md-2 btn btn-success">
+                                                    <i class="fa-solid fa-magnifying-glass"
+                                                        style="font-size: 20px;color: #fff;"></i>
+                                                </button>
+                                            </div>
                                         </div>
-                                        <button type="button" class="btn btn-primary">
-                                          <i class="fas fa-search"></i>
-                                        </button>
-                                      </div>
-                                </form>
-                            </div> -->
+                                    </form>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="header--contact">
                             <a href="contact.html">Liên hệ</a>
@@ -180,11 +193,14 @@
                     <!-- menu mobile -->
                     <nav class="nav__mobile">
                         <ul class="nav__mobile-list">
-                            <li class="nav__mobile-link">
-                                <form action="">
-                                    <input type="search" class="form-control" placeholder="tìm kiếm"
-                                        style="height: 34px;width: 180px;">
-                                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                              <li class="nav__mobile-link">
+                                <form action="" class="form__mobile--list">
+                                    <div class="div__mobile--list row">
+                                        <input type="search" class="form-control col-10" placeholder="tìm kiếm"
+                                            >
+                                        <button class="btn btn-success col-2"> <i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
                                 </form>
                             </li>
                             <li><a href="contact.html" class="nav__mobile-link">Liên Hệ</a> </li>
@@ -212,6 +228,7 @@
                 </div>
             </div>
         </section>
+        <!-- end menu--header -->
         <!-- button contact -->
         <section class="contact--btn">
             <div class="contact--btn--border">
@@ -230,33 +247,42 @@
             </div>
             <div class="contact--btn--border">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0469 19.0051H20.0537C20.0537 21.9651 20.0537 25.6085 20.0537 25.6085H17.1002C17.1002 25.6085 17.1002 22.0004 17.1002 19.0051H15.6963V16.6712H17.1002V15.1617C17.1002 14.0805 17.6529 12.3911 20.0809 12.3911L22.2695 12.3989V14.6644C22.2695 14.6644 20.9395 14.6644 20.6809 14.6644C20.4224 14.6644 20.0547 14.7846 20.0547 15.3002V16.6717H22.305L22.0469 19.0051Z" fill="#272882"/>
-                    </svg>
+                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.0469 19.0051H20.0537C20.0537 21.9651 20.0537 25.6085 20.0537 25.6085H17.1002C17.1002 25.6085 17.1002 22.0004 17.1002 19.0051H15.6963V16.6712H17.1002V15.1617C17.1002 14.0805 17.6529 12.3911 20.0809 12.3911L22.2695 12.3989V14.6644C22.2695 14.6644 20.9395 14.6644 20.6809 14.6644C20.4224 14.6644 20.0547 14.7846 20.0547 15.3002V16.6717H22.305L22.0469 19.0051Z"
+                        fill="#272882" />
+                </svg>
             </div>
             <div class="contact--btn--border">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5694 15.7335C25.576 15.8795 25.5795 16.0266 25.5795 16.1737C25.5795 20.6535 22.1706 25.8172 15.9337 25.8172C14.0192 25.8172 12.2371 25.2578 10.7373 24.2955C11.0025 24.3269 11.2724 24.343 11.5459 24.343C13.1347 24.343 14.5959 23.8007 15.7563 22.8918C14.2731 22.8646 13.0208 21.8845 12.5895 20.5372C12.7959 20.5763 13.0089 20.5983 13.2266 20.5983C13.5357 20.5983 13.8359 20.558 14.1201 20.4802C12.5693 20.1694 11.4012 18.7995 11.4012 17.1562C11.4012 17.142 11.4012 17.1271 11.4018 17.1135C11.8586 17.3668 12.3812 17.5199 12.9365 17.5371C12.0276 16.9302 11.429 15.892 11.429 14.7161C11.429 14.0944 11.5958 13.5118 11.8876 13.0111C13.5589 15.0626 16.0577 16.4116 18.8745 16.554C18.8163 16.3055 18.7873 16.0474 18.7873 15.781C18.7873 13.9093 20.3048 12.3911 22.1766 12.3911C23.1519 12.3911 24.0317 12.8028 24.6511 13.4614C25.4241 13.3095 26.1479 13.0283 26.8046 12.6385C26.5495 13.4305 26.0138 14.0944 25.312 14.5144C25.9984 14.4325 26.6533 14.251 27.259 13.9811C26.807 14.6597 26.2321 15.2572 25.5694 15.7335Z" fill="#272882"/>
-                    </svg>
+                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.5694 15.7335C25.576 15.8795 25.5795 16.0266 25.5795 16.1737C25.5795 20.6535 22.1706 25.8172 15.9337 25.8172C14.0192 25.8172 12.2371 25.2578 10.7373 24.2955C11.0025 24.3269 11.2724 24.343 11.5459 24.343C13.1347 24.343 14.5959 23.8007 15.7563 22.8918C14.2731 22.8646 13.0208 21.8845 12.5895 20.5372C12.7959 20.5763 13.0089 20.5983 13.2266 20.5983C13.5357 20.5983 13.8359 20.558 14.1201 20.4802C12.5693 20.1694 11.4012 18.7995 11.4012 17.1562C11.4012 17.142 11.4012 17.1271 11.4018 17.1135C11.8586 17.3668 12.3812 17.5199 12.9365 17.5371C12.0276 16.9302 11.429 15.892 11.429 14.7161C11.429 14.0944 11.5958 13.5118 11.8876 13.0111C13.5589 15.0626 16.0577 16.4116 18.8745 16.554C18.8163 16.3055 18.7873 16.0474 18.7873 15.781C18.7873 13.9093 20.3048 12.3911 22.1766 12.3911C23.1519 12.3911 24.0317 12.8028 24.6511 13.4614C25.4241 13.3095 26.1479 13.0283 26.8046 12.6385C26.5495 13.4305 26.0138 14.0944 25.312 14.5144C25.9984 14.4325 26.6533 14.251 27.259 13.9811C26.807 14.6597 26.2321 15.2572 25.5694 15.7335Z"
+                        fill="#272882" />
+                </svg>
             </div>
             <div class="contact--btn--border">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9"/>
-                    <path d="M25.0075 14.577L26.1731 13.4619V13.2178H22.1351L19.2571 20.3809L15.983 13.2178H11.7489V13.4619L13.1105 15.1011C13.2432 15.2222 13.3126 15.3993 13.295 15.5777V22.0195C13.337 22.2514 13.2615 22.49 13.0984 22.6586L11.5645 24.5176V24.7586H15.9136V24.5146L14.3797 22.6586C14.2135 22.4894 14.135 22.2551 14.1685 22.0195V16.4475L17.9862 24.7617H18.4299L21.7126 16.4475V23.0707C21.7126 23.2454 21.7126 23.2813 21.5982 23.3958L20.4173 24.5383V24.783H26.1464V24.5389L25.0081 23.4244C24.9083 23.3489 24.8565 23.2223 24.8778 23.0993V14.902C24.8565 14.7785 24.9077 14.6519 25.0075 14.577Z" fill="#272882"/>
-                    </svg>
+                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9" />
+                    <path
+                        d="M25.0075 14.577L26.1731 13.4619V13.2178H22.1351L19.2571 20.3809L15.983 13.2178H11.7489V13.4619L13.1105 15.1011C13.2432 15.2222 13.3126 15.3993 13.295 15.5777V22.0195C13.337 22.2514 13.2615 22.49 13.0984 22.6586L11.5645 24.5176V24.7586H15.9136V24.5146L14.3797 22.6586C14.2135 22.4894 14.135 22.2551 14.1685 22.0195V16.4475L17.9862 24.7617H18.4299L21.7126 16.4475V23.0707C21.7126 23.2454 21.7126 23.2813 21.5982 23.3958L20.4173 24.5383V24.783H26.1464V24.5389L25.0081 23.4244C24.9083 23.3489 24.8565 23.2223 24.8778 23.0993V14.902C24.8565 14.7785 24.9077 14.6519 25.0075 14.577Z"
+                        fill="#272882" />
+                </svg>
             </div>
             <div class="contact--btn--border">
                 <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
-                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9"/>
-                    <path d="M16.2578 18.4551C16.6935 18.0194 17.2412 17.8015 17.9009 17.8015C18.5606 17.8015 19.1083 18.0194 19.544 18.4551L20.0887 18.9998L21.1962 17.9105L20.6333 17.3658C20.2702 16.9906 19.8526 16.7061 19.3806 16.5125C18.9085 16.3188 18.4183 16.222 17.91 16.222C17.3895 16.222 16.8933 16.3188 16.4212 16.5125C15.9492 16.7061 15.5316 16.9906 15.1685 17.3658L13.5163 18.9998C13.1411 19.375 12.8627 19.8047 12.6811 20.2889C12.4875 20.7609 12.3906 21.2451 12.3906 21.7413C12.3906 22.2376 12.4875 22.7217 12.6811 23.1938C12.8627 23.6779 13.1411 24.1076 13.5163 24.4828C13.9036 24.8581 14.3333 25.1395 14.8053 25.3271C15.2774 25.5147 15.7615 25.6085 16.2578 25.6085C16.7541 25.6085 17.2412 25.5147 17.7193 25.3271C18.1974 25.1395 18.6241 24.8581 18.9993 24.4828L19.544 23.9382L18.4546 22.8307L17.91 23.3753C17.45 23.8353 16.8993 24.0653 16.2578 24.0653C15.6163 24.0653 15.0716 23.8353 14.6238 23.3753C14.1638 22.9275 13.9339 22.3828 13.9339 21.7413C13.9339 21.0998 14.1638 20.5491 14.6238 20.0892L16.2578 18.4551ZM18.9993 13.5168L18.4546 14.0614L19.544 15.1689L20.0887 14.6243C20.5486 14.1643 21.0993 13.9344 21.7408 13.9344C22.3823 13.9344 22.927 14.1643 23.3749 14.6243C23.8348 15.0721 24.0648 15.6168 24.0648 16.2583C24.0648 16.8998 23.8348 17.4505 23.3749 17.9105L21.7408 19.5445C21.3051 19.9802 20.7574 20.1981 20.0977 20.1981C19.4381 20.1981 18.8904 19.9802 18.4546 19.5445L17.91 18.9998L16.8025 20.0892L17.3653 20.6338C17.7284 21.009 18.146 21.2935 18.618 21.4871C19.0901 21.6808 19.5803 21.7776 20.0887 21.7776C20.6091 21.7776 21.1054 21.6808 21.5774 21.4871C22.0495 21.2935 22.4671 21.009 22.8302 20.6338L24.4824 18.9998C24.8576 18.6246 25.136 18.1949 25.3175 17.7108C25.5112 17.2387 25.608 16.7545 25.608 16.2583C25.608 15.762 25.5112 15.2779 25.3175 14.8058C25.136 14.3217 24.8576 13.892 24.4824 13.5168C24.095 13.1415 23.6654 12.8632 23.1933 12.6816C22.7212 12.4879 22.2371 12.3911 21.7408 12.3911C21.2446 12.3911 20.7604 12.4879 20.2884 12.6816C19.8042 12.8632 19.3745 13.1415 18.9993 13.5168Z" fill="url(#paint0_linear_202_5382)"/>
+                    <rect x="0.5" y="0.5" width="37" height="37" rx="7.5" fill="white" stroke="#D9D9D9" />
+                    <path
+                        d="M16.2578 18.4551C16.6935 18.0194 17.2412 17.8015 17.9009 17.8015C18.5606 17.8015 19.1083 18.0194 19.544 18.4551L20.0887 18.9998L21.1962 17.9105L20.6333 17.3658C20.2702 16.9906 19.8526 16.7061 19.3806 16.5125C18.9085 16.3188 18.4183 16.222 17.91 16.222C17.3895 16.222 16.8933 16.3188 16.4212 16.5125C15.9492 16.7061 15.5316 16.9906 15.1685 17.3658L13.5163 18.9998C13.1411 19.375 12.8627 19.8047 12.6811 20.2889C12.4875 20.7609 12.3906 21.2451 12.3906 21.7413C12.3906 22.2376 12.4875 22.7217 12.6811 23.1938C12.8627 23.6779 13.1411 24.1076 13.5163 24.4828C13.9036 24.8581 14.3333 25.1395 14.8053 25.3271C15.2774 25.5147 15.7615 25.6085 16.2578 25.6085C16.7541 25.6085 17.2412 25.5147 17.7193 25.3271C18.1974 25.1395 18.6241 24.8581 18.9993 24.4828L19.544 23.9382L18.4546 22.8307L17.91 23.3753C17.45 23.8353 16.8993 24.0653 16.2578 24.0653C15.6163 24.0653 15.0716 23.8353 14.6238 23.3753C14.1638 22.9275 13.9339 22.3828 13.9339 21.7413C13.9339 21.0998 14.1638 20.5491 14.6238 20.0892L16.2578 18.4551ZM18.9993 13.5168L18.4546 14.0614L19.544 15.1689L20.0887 14.6243C20.5486 14.1643 21.0993 13.9344 21.7408 13.9344C22.3823 13.9344 22.927 14.1643 23.3749 14.6243C23.8348 15.0721 24.0648 15.6168 24.0648 16.2583C24.0648 16.8998 23.8348 17.4505 23.3749 17.9105L21.7408 19.5445C21.3051 19.9802 20.7574 20.1981 20.0977 20.1981C19.4381 20.1981 18.8904 19.9802 18.4546 19.5445L17.91 18.9998L16.8025 20.0892L17.3653 20.6338C17.7284 21.009 18.146 21.2935 18.618 21.4871C19.0901 21.6808 19.5803 21.7776 20.0887 21.7776C20.6091 21.7776 21.1054 21.6808 21.5774 21.4871C22.0495 21.2935 22.4671 21.009 22.8302 20.6338L24.4824 18.9998C24.8576 18.6246 25.136 18.1949 25.3175 17.7108C25.5112 17.2387 25.608 16.7545 25.608 16.2583C25.608 15.762 25.5112 15.2779 25.3175 14.8058C25.136 14.3217 24.8576 13.892 24.4824 13.5168C24.095 13.1415 23.6654 12.8632 23.1933 12.6816C22.7212 12.4879 22.2371 12.3911 21.7408 12.3911C21.2446 12.3911 20.7604 12.4879 20.2884 12.6816C19.8042 12.8632 19.3745 13.1415 18.9993 13.5168Z"
+                        fill="url(#paint0_linear_202_5382)" />
                     <defs>
-                    <linearGradient id="paint0_linear_202_5382" x1="12.3906" y1="25.6085" x2="25.608" y2="12.3911" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#F65522"/>
-                    <stop offset="1" stop-color="#FB9D25"/>
-                    </linearGradient>
+                        <linearGradient id="paint0_linear_202_5382" x1="12.3906" y1="25.6085" x2="25.608" y2="12.3911"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F65522" />
+                            <stop offset="1" stop-color="#FB9D25" />
+                        </linearGradient>
                     </defs>
-                    </svg>
+                </svg>
             </div>
         </section>
         <!-- end menu--header -->
@@ -266,7 +292,7 @@
                     <div class="fui-basic-breadcrumb">
                         <ul class="breadcrumb-list">
                             <li class="breadcrumb-item">
-                                <a href="/index.html" class="breadcrumb-link">
+                                <a href="./index.html" class="breadcrumb-link">
 
                                     Trang chủ
                                 </a>
@@ -567,7 +593,9 @@
                             <div class="row" style="gap: 23px 0;">
                                 <div class="col-md-4 col-sm-6 col-12 view--pd">
                                     <div class="post--viewhight__img">
+                                       <a href="single-news.html">
                                         <img src="img/Rectangle 2660.png" alt="">
+                                       </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-12 view--pd">
@@ -578,7 +606,9 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-12 view--pd">
                                     <div class="post--viewhight__img">
-                                        <img src="img/Rectangle 2660.png" alt="">
+                                        <a href="single-news.html">
+                                            <img src="img/Rectangle 2660.png" alt="">
+                                           </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-12 view--pd">
@@ -589,7 +619,9 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-12 view--pd">
                                     <div class="post--viewhight__img">
-                                        <img src="img/Rectangle 2660.png" alt="">
+                                        <a href="single-news.html">
+                                            <img src="img/Rectangle 2660.png" alt="">
+                                           </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-12 view--pd">
@@ -600,7 +632,9 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-12 view--pd">
                                     <div class="post--viewhight__img">
-                                        <img src="img/Rectangle 2660.png" alt="">
+                                        <a href="single-news.html">
+                                            <img src="img/Rectangle 2660.png" alt="">
+                                           </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-12 view--pd">
@@ -611,7 +645,9 @@
                                 </div>
                                 <div class="col-md-4 col-sm-6 col-12 view--pd">
                                     <div class="post--viewhight__img">
-                                        <img src="img/Rectangle 2660.png" alt="">
+                                        <a href="single-news.html">
+                                            <img src="img/Rectangle 2660.png" alt="">
+                                           </a>
                                     </div>
                                 </div>
                                 <div class="col-md-8 col-sm-6 col-12 view--pd">
@@ -628,8 +664,8 @@
                         <div class="nav--category">
                             <h4>Danh mục</h4>
                             <ul>
-                                <li><a href="">> Tin tức</a></li>
-                                <li><a href="">> Tuyển dụng</a></li>
+                                <li><a href="news.html">> Tin tức</a></li>
+                                <li><a href="#">> Tuyển dụng</a></li>
 
                             </ul>
                         </div>
@@ -655,7 +691,7 @@
                     <div class="col-md-4 col-sm-6 col-12 sectiton--news--pd">
                         <div class="sectiton--news--box">
                             <div class="sectiton--news--box__img">
-                                <a href="#"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
+                                <a href="single-news.html"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
                             </div>
                             <div class="sectiton--news--box--body">
                                 <div class="sectiton--news--box__btn--news">
@@ -702,7 +738,7 @@
                     <div class="col-md-4 col-sm-6 col-12 sectiton--news--pd">
                         <div class="sectiton--news--box">
                             <div class="sectiton--news--box__img">
-                                <a href="#"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
+                                <a href="single-news.html"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
                             </div>
                             <div class="sectiton--news--box--body">
                                 <div class="sectiton--news--box__btn--news">
@@ -749,7 +785,7 @@
                     <div class="col-md-4 col-sm-6 col-12 sectiton--news--pd">
                         <div class="sectiton--news--box">
                             <div class="sectiton--news--box__img">
-                                <a href="#"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
+                                <a href="single-news.html"> <img src="img/confident-teacher-explaining-lesson-pupils 3.png" alt=""></a>
                             </div>
                             <div class="sectiton--news--box--body">
                                 <div class="sectiton--news--box__btn--news">
