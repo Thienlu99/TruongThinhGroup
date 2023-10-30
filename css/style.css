@@ -22,6 +22,7 @@
   left: 2px;
 }
 .header--socal__km p {
+  font-size: 14px;
   font-weight: 500;
   padding-left: 10px;
   margin-bottom: 0rem;
@@ -2315,7 +2316,7 @@ h4.sectiton--album--video {
   font-style: normal;
   text-transform: uppercase;
 }
-/* search dropdown */
+/*-------- search dropdown */
 .dropdown--search {
   position: relative;
   display: inline-block;
@@ -2326,12 +2327,15 @@ h4.sectiton--album--video {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  left: -105px;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
+  padding: 17px 30px;
+  border-radius: 10px;
   z-index: 1;
 }
 
 .dropdown--search:hover #inputParent {
   display: block;
 }
+/*--------end search dropdown */

@@ -100,7 +100,7 @@
             <div class="container">
                 <div class="menu--header--all">
                     <div class="menu--header__img">
-                        <a href="/index.html">
+                        <a href="./index.html">
                             <picture>
                                 <source media="(max-width:540px)" srcset="img/Asset 1 1.png">
                                 <source media="(max-width:768px)" srcset="img/Asset 1 1.png">
@@ -159,11 +159,21 @@
                                 <div class="dropdown--search">
                                     <i class="fa-solid fa-magnifying-glass class--searchform" id="search"></i>
                                     <!--icon to be hovered-->
-                                    <div id="inputParent" class="parentc">
-                                        <!--input to be shown-->
-                                        <input type="text" placeholder='Tìm kiếm...' autocomplete='off' id="input-bar">
-                                        <!-- <button> <i class="fa-solid fa-magnifying-glass"></i></button> -->
-                                    </div>
+                                    <form action="" class="form--dropdown--search">
+                                        <div id="inputParent" class="parentc">
+                                            <div class=" row">
+                                                <!--input to be shown-->
+
+                                                <input class="col-md-10 form-control" type="text"
+                                                    placeholder='Tìm kiếm...' autocomplete='off' id="input-bar"
+                                                    style=" background-color: #fff;">
+                                                <button class="col-md-2 btn btn-success">
+                                                    <i class="fa-solid fa-magnifying-glass"
+                                                        style="font-size: 20px;color: #fff;"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
 
