@@ -714,7 +714,7 @@
 .section--store--right {
   min-height: 524px;
   background-color: var(--second);
-  padding: 10px 10px 0 0;
+  padding-right:5px;
   border-radius: 0 12px 12px 0;
   /* align-items: center; */
   /* display: flex; */
@@ -757,13 +757,13 @@
   font-size: 14px;
 }
 .section--store--right__border {
-  max-height: 524px;
+  max-height: 530px;
   overflow-y: scroll;
 }
 /* Thiết lập màu nền của thanh scrollbar */
 /* Tùy chỉnh thanh cuộn và khoảng cách từ biên */
 .section--store--right__border::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   background-color: transparent; /* Để thanh cuộn trong suốt */
 }
 
@@ -1487,8 +1487,8 @@ h4.sectiton--album--video {
 .contact--btn {
   z-index: 999;
   position: fixed;
-  margin-left: 30px;
-  margin-top: 72px;
+  top: 32%;
+  left: 2%;
 }
 .contact--btn--border {
   margin-bottom: 15px;
@@ -2021,7 +2021,7 @@ h4.sectiton--album--video {
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.02);
 }
 /* khóa học chi tiết */
-/* + - */
+/*--------- + - */
 .single--course--content__right .fui-accordion {
   border-radius: 16px;
   background: var(--second);
@@ -2097,7 +2097,7 @@ h4.sectiton--album--video {
 .accordion--description--box--left p {
   padding-left: 16px;
 }
-/* end + - */
+/*----------- end + - */
 
 .single--course--content__left--row p:first-child {
   color: var(--orange);
@@ -2148,7 +2148,7 @@ h4.sectiton--album--video {
   font-weight: 700;
   padding-top: 80px;
 }
-/*  + - FAQ */
+/* --------- + - FAQ */
 .single--course--FAQ {
   margin: 0 auto;
   width: 86%;
@@ -2209,8 +2209,14 @@ h4.sectiton--album--video {
   border-left: 2px solid #f7931e;
 }
 
-/* end + - FAQ */
+/*--------- end + - FAQ */
+.single--course--content--row{
+  gap: 40px 0;
+}
 /* page liên hệ */
+.section--contact--row{
+  gap: 43px 0;
+}
 .section--contact {
   padding-top: 58px;
 }
