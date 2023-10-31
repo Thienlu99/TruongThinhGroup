@@ -150,5 +150,34 @@ $(document).ready(function () {
       }
     });
   }
+  // -----facybox
+  Fancybox.bind("[data-fancybox]", {
+    infinity: true, // Cho phép vô hạn lặp lại các ảnh trong bộ sưu tập
+    keyboard: {
+        Escape: "close", // Đóng Fancybox khi nhấn phím Esc
+        Delete: "close", // Đóng Fancybox khi nhấn phím Delete
+        Backspace: "close", // Đóng Fancybox khi nhấn phím Backspace
+        PageUp: "next", // Chuyển đến hình ảnh kế tiếp khi nhấn Page Up
+        PageDown: "prev", // Chuyển đến hình ảnh trước đó khi nhấn Page Down
+        ArrowUp: "next", // Chuyển đến hình ảnh kế tiếp khi nhấn mũi tên lên
+        ArrowDown: "prev", // Chuyển đến hình ảnh trước đó khi nhấn mũi tên xuống
+        ArrowRight: "next", // Chuyển đến hình ảnh kế tiếp khi nhấn mũi tên phải
+        ArrowLeft: "prev" // Chuyển đến hình ảnh trước đó khi nhấn mũi tên trái
+    },
+    // l10n:{
+    //     CLOSE:"Đóng",
+    // },
+    on: {
+        ready: (fancybox) => {
+            // Sự kiện này được gọi khi Fancybox đã sẵn sàng để sử dụng
+            // Bạn có thể thêm mã JavaScript tùy chỉnh ở đây để xử lý khi Fancybox đã được tải
+        },
+        caption: function () {
+            // Sự kiện này được gọi khi bạn muốn tùy chỉnh hiển thị chú thích
+            // Bạn có thể cung cấp mã JavaScript tùy chỉnh để tạo nội dung chú thích theo ý muốn
+        }
+    },
+
+});
 });
 
